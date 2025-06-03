@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gonzalo Balatas - Taller Premium</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #121212;
+  background-image:
+    radial-gradient(circle at center, #2b2b2b, #0f0f0f 80%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 0, 0, 0.05) 0px,
+      rgba(255, 0, 0, 0.05) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+
+    .container {
+      background: #ffffff;
+      border-radius: 30px;
+      border: 4px solid #d90000;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      max-width: 460px;
+      width: 100%;
+      padding: 50px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      margin-bottom: 30px;
+    }
+
+    svg {
+      width: 120px;
+      height: auto;
+      fill: #d90000;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: #b30000;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .btn {
+      background: linear-gradient(to right, #d90000, #a00000);
+      border: none;
+      border-radius: 40px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 14px 22px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(217, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.06);
+      box-shadow: 0 10px 22px rgba(217, 0, 0, 0.7);
+    }
+
+    .btn svg {
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      fill: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- LOGO SVG DE CARRO -->
+    <div class="logo" aria-label="Logo taller automotriz">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 40h4l3 10h46l3-10h4v-8c0-4-2-7-6-9l-6-10c-2-4-5-5-10-5h-16c-5 0-8 1-10 5l-6 10c-4 2-6 5-6 9v8z" fill="#d90000"/>
+        <circle cx="16" cy="52" r="4" fill="#000"/>
+        <circle cx="48" cy="52" r="4" fill="#000"/>
+        <rect x="22" y="18" width="20" height="8" rx="2" fill="#fff"/>
+      </svg>
+    </div>
+
+    <h1>Gonzalo Balatas</h1>
+    <p>¡Taller automotriz premium! Mantené tu motor como nuevo.</p>
+
+    <div class="buttons">
+      <a href="https://wa.me/528111944439" target="_blank" class="btn">
+        <svg viewBox="0 0 24 24"><path d="M20.52 3.48a11.94 11.94 0 0 0-16.9 0 11.92 11.92 0 0 0-3.3 8.45c0 2.1.56 4.15 1.6 5.96l-1.7 5.84 6-1.56a11.92 11.92 0 0 0 7.3-2.6 11.93 11.93 0 0 0 3.3-8.45c0-2.04-.63-4.03-1.6-5.84z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://facebook.com/tuusuario" target="_blank" class="btn">
+        <svg viewBox="0 0 24 24"><path d="M22 12.07c0-5.52-4.48-10-10-10s-10 4.48-10 10c0 4.99 3.66 9.12 8.44 9.88v-6.99h-2.54v-2.9h2.54v-2.2c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.86h2.78l-.44 2.9h-2.34v6.99c4.78-.76 8.44-4.89 8.44-9.88z"/></svg>
+        Facebook
+      </a>
+      <a href="https://instagram.com/tuusuario" target="_blank" class="btn">
+        <svg viewBox="0 0 24 24"><path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
